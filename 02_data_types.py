@@ -1,3 +1,4 @@
+'''
 print(123*2)#123 - літерал
 print("123"*2)
 print("c")
@@ -113,11 +114,11 @@ number = 44
 # first_number = 100
 # second_number = 222
 #input - введення даних з клавіатури 
-first_number = float(input("Enter first number : "))
-second_number =  float (input("Enter second number : "))
-result = first_number + second_number
-print("Summa = ", result)
-print(result*2)
+# first_number = float(input("Enter first number : "))
+# second_number =  float (input("Enter second number : "))
+# result = first_number + second_number
+# print("Summa = ", result)
+# print(result*2)
 
 line1 = "one"
 line2 = "two"
@@ -128,4 +129,15 @@ all_line = line1 +" "+ line2 +" "+ line3 +" "+ line4#конкантенація 
 print("="*40)
 print("All line : " ,all_line)
 print("="*40)
+
+'''
+num = 1234
+n1 =num // 1000 #1234//1000 = 1
+n2 = num//100%10 #1234//100 = 12    12%10 = 2
+n3 = num//10%10 #1234//10 = 123    123%10 = 3
+n4 = num%10 #1234%10 -->  1234/10 = 123   123*10 = 1230  1234-1230 = 4
+print(n1)
+print(n2)
+print(n3)
+print(n4)
 
