@@ -107,3 +107,16 @@ elif login == "exit":
     print("Goodbye")
 else:
     print("Error")
+
+word = input("Enter word  :")
+revers_word = word[::-1]
+print(word)
+print(revers_word)
+
+num = 12345
+a = num//10_000
+b = num//1000%10
+c = num//100%10
+d = num//10%10
+e = num %10
+print(f"{a} {b} {c} {d} {e}")
