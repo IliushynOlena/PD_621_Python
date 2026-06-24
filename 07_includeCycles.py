@@ -73,3 +73,17 @@ for i in range(0,N):
             print('+ ',end='')
     print()
 
+for num in range(2,10):    
+    flag = True
+    for i in range(2,num//2+1):#1....5
+        if num%i == 0:
+            flag = False
+            break
+
+    if not flag:
+        print("composite", num)
+    else:
+        print("Simple", num)
+    
+
+
