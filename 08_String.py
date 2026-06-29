@@ -137,7 +137,7 @@ print(format_line)
 salary = 25789.25896
 salaryStr = f"Your salary is : {salary:9.3f}$"
 print(salaryStr)
-temp_cold  = -28
+temp_cold  = 28
 temp_hot = 28
 print(f"Today temperature is {temp_cold:-}")
 print(f"Today temperature is {temp_hot:+}")
@@ -161,8 +161,10 @@ print(id(line))
 line+="!!!!!"
 print(line)
 print(id(line))
-print(f"{5000} - {chr(5000)} \t", end=" ")
-for i in range(1000):
-    print(f"------{i} - {chr(i)} \t", end=" ")
-    if i%7 == 0:
-        print()
+# print(f"{5000} - {chr(100)} \t", end=" ")
+# for i in range(1000):
+#     print(f"------{i} - {chr(i)} \t", end=" ")
+#     if i%7 == 0:
+#         print()
+
+print(f"{chr(9556)}{chr(9552)*15}{"Price":^50}fswefwef{chr(9552)*15}")
