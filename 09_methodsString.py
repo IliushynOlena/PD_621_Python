@@ -182,4 +182,13 @@ print(f"={email.rstrip()}=")
 print(f"={email.strip()}=")
 
 
+line = 'lflkf64465'
+
+print(line[0])
+print(line[1])
+print(line[2])
+
+for letter in line:
+    print(letter)
+    letter.isalpha()
 
