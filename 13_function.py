@@ -101,6 +101,7 @@ def fillList(new_list,some_number, count_elements = 5, min = 1, max = 10 ):
     new_list = [random.randint(min, max+1)   for i in range(count_elements)]
     return new_list
 
+
 numbers = []
 print(numbers)
 numbers = fillList(numbers,10)
