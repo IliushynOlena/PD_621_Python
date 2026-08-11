@@ -94,3 +94,22 @@ if isPalindrome(userStr.lower())  == True:
     print("Palindrome")
 else:
     print("Not palindrome")
+
+def isSimple(n):
+    flag = True
+    for i in range(2,n//2+1):#1....5
+        if n%i == 0:
+            flag = False
+            break
+
+    if not flag:
+        return False
+    else:
+        return True
+    
+def countSimple(*args):#args = 1 5 8 7 9 6 23
+    newList=[]
+    for num in args:
+        if isSimple(num) == True:
+            newList.append(num)
+    return len(newList)
