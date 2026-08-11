@@ -51,10 +51,22 @@
 # print("Continue......")
 
 colors = ['red', 'green','yellow','white','grey']
-
+#First function
 def showElement(index):
     print(f"Element in index [{index}] - {colors[index]}")
 
+try:
+    index = int(input("Enter index element : "))
+    showElement(index)
+except ValueError as v:
+    print(v)
+    print("Enter index (number)")
+except IndexError:
+    print("Index out of range")
+except Exception as ex:
+    print(ex)
+
+#Second function
 def showElementWithEx(index):
     #index - correct ????
     try:
@@ -66,13 +78,3 @@ def showElementWithEx(index):
         print(ex)
 
 showElementWithEx(4)
-try:
-    index = int(input("Enter index element : "))
-    showElement(index)
-except ValueError as v:
-    print(v)
-    print("Enter index (number)")
-except IndexError:
-    print("Index out of range")
-except Exception as ex:
-    print(ex)
