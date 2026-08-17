@@ -128,3 +128,33 @@ with open("student_save.json",'r') as file:
 # new_student = json.loads(student_serialize)
 # print(type(new_student))
 # print(new_student['name'])
+
+print(students_list)
+
+
+
+def addNewStudent(student, students_list):
+    students_list.append(student)
+
+
+
+new_student = {
+    #key(only str): value (any type)
+    'name':'name1',
+    'surname':'surname1',
+    'age':1,
+    'study place': "study",
+    'rating' : 11.8,
+    'group': 'PD621',
+    'course':'programming',
+    'birthdate':'01.06.2009'
+}
+addNewStudent(new_student, students_list)
+print(students_list)
+
+
+print("\t\t\t MEnu\n\t\t1 - Add new  .\n\t\t2 - Remove\n\t\t3 - Change students")
+choice = int(input("Enter your choice : "))
+if choice == 1:
+    addNewStudent(new_student, students_list)
+    print(students_list)
