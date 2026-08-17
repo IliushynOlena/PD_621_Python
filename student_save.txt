@@ -1,0 +1,1 @@
+{'name': 'Oleg', 'surname': 'Ivanchuk', 'study place': 'IT Step', 'rating': 11.8, 'group': 'PD621', 'email': 'superpuperuser@gmail.com', 'emaile': 'superpuperuser@gmail.com', 'homeaddress': 'Rivne, Soborna 285'}
